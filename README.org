@@ -1,0 +1,22 @@
+* Gear Display
+** Summary
+Personal project that interfaces between the CAN bus on a 2010 Honda Accord and a microcontroller to a seven-segment display in order to display what gear number the car is currently in.
+
+** Accomplishments
+- Designed the hardware and firmware for the project from scratch.
+- Reverse engineered values from the vehicle’s transmission controller.
+- Gained knowledge about lower level CAN protocols and how the network performs in different applications.
+- Created a mock CAN network with three nodes: my custom hardware, a dashboard taken from a vehicle, and a vehicle network adapter. Messages were transmitted via the adapter to simulate the transmission controller. The transmitted messages were read by both the custom hardware and the dashboard for easy prototyping.
+
+** Hardware
+- ValueCAN 4-1 (Vehicle Network Adapter)
+- MCP2551 (CAN Transceiver)
+- ESP32-WROOM-32 (Microcontroller with integrated CAN Controller)
+- Mock dashboard
+- Seven-segment display
+
+** Desktop Software
+- Vehicle Spy 3
+
+** Microcontroller Software Language
+- C with FreeRTOS
